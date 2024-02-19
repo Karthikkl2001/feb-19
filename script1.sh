@@ -1,17 +1,10 @@
-duser="admin"
-dpasswd="secret"
-echo "enter username"
+echo "enter two number"
 read a
-echo "enter password"
 read b
-until [ $duser == $a ] && [ $dpasswd ==$b ];
-do
-	echo "invalid details"
-	echo "please enter valid details"
-	echo "enter username"
-	read a
-	echo "enter password"
-	read b
-done
-echo "sucessfully login"
+if [ a -eq b ]
+then
+	echo "a is equal to b"
+else
+	echo "a is not equal to b"
+fi
 	
