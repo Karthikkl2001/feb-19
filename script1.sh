@@ -1,7 +1,7 @@
 echo "enter two number"
 read a
 read b
-if [ a -eq b ]
+if [ $a -eq $b ]
 then
 	echo "a is equal to b"
 else
